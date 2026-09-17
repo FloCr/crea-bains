@@ -434,7 +434,7 @@
       </div>
 
       <!-- Formulaire -->
-      <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data"
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data"
         class="bg-gray-50 rounded-2xl p-8 border border-gray-100"
       >
         <!-- Remplacer par une clé Web3Forms valide pour Créa-Bains : https://web3forms.com -->
@@ -475,8 +475,56 @@
             class="w-full bg-sky-500 hover:bg-sky-600 text-white font-black py-3 rounded-lg transition-colors text-lg">
             Envoyer ma demande
           </button>
+          <p id="contact-form-error" class="hidden text-sm text-red-600 mt-2">
+            Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous contacter par téléphone.
+          </p>
         </div>
       </form>
+      <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          var form = e.target;
+          var button = form.querySelector('button[type="submit"]');
+          var errorMsg = document.getElementById('contact-form-error');
+          errorMsg.classList.add('hidden');
+          button.disabled = true;
+          button.textContent = 'Envoi en cours...';
+
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' }
+          })
+            .then(function (response) { return response.json(); })
+            .then(function (data) {
+              if (data.success) {
+                window.location.href = 'merci.html';
+              } else {
+                throw new Error(data.message || 'Envoi échoué');
+              }
+            })
+            .catch(function () {
+              errorMsg.classList.remove('hidden');
+              button.disabled = false;
+              button.textContent = 'Envoyer ma demande';
+            });
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- ===== ZONES D'INTERVENTION ===== -->
+  <section class="py-12 bg-gray-50 border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-lg font-bold text-navy-900 mb-4">Nos zones d'intervention</h2>
+      <div class="flex flex-wrap gap-3">
+        <a href="salle-de-bains-saint-leu-la-foret.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Saint-Leu-la-Forêt (95320)</a>
+        <a href="salle-de-bains-taverny.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Taverny (95150)</a>
+        <a href="salle-de-bains-montlignon.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Montlignon (95680)</a>
+        <a href="salle-de-bains-beauchamp.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Beauchamp (95250)</a>
+        <a href="salle-de-bains-le-plessis-bouchard.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Le Plessis-Bouchard (95130)</a>
+        <a href="salle-de-bains-ermont.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Ermont (95120)</a>
+      </div>
     </div>
   </section>
 
