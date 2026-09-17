@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Créa-Bains — Rénovation de salle de bains & Climatisation Val d'Oise</title>
+  <title>Créa-Bains — Rénovation de salle de bains & Climatisation</title>
   <meta name="description" content="Créa-Bains, spécialiste de la création et rénovation de salles de bains et de la climatisation réversible à Saint-Leu-la-Forêt et alentours (Val d'Oise). Devis gratuit." />
-  <meta name="keywords" content="rénovation salle de bains, création salle de bains, climatisation réversible, Saint-Leu-la-Forêt, Val d'Oise, plombier chauffagiste, mono-split, multi-split" />
+  <meta name="keywords" content="rénovation salle de bains, création salle de bains, climatisation réversible, Saint-Leu-la-Forêt, Val d'Oise, mono-split, multi-split" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://crea-bains.fr/" />
 
@@ -64,6 +64,7 @@
               900: '#0a1f38',
             },
             sky: {
+              50: '#f0f9ff',
               400: '#38bdf8',
               500: '#0ea5e9',
               600: '#0284c7',
@@ -71,158 +72,153 @@
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
+            hand: ['"Caveat"', 'cursive'],
           }
         }
       }
     }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-  <style>
-    .droplet-logo { filter: drop-shadow(0 2px 4px rgba(14,165,233,0.35)); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
 </head>
 <body class="font-sans text-gray-800 antialiased">
 
   <!-- ===== NAVBAR ===== -->
-  <header class="fixed top-0 inset-x-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-      <a href="#" class="flex items-center gap-2">
-        <svg class="droplet-logo h-9 w-9" viewBox="0 0 24 24" fill="none">
-          <path d="M12 2C12 2 5 11 5 15.5A7 7 0 0019 15.5C19 11 12 2 12 2Z" fill="#0ea5e9"/>
+  <header class="fixed top-0 inset-x-0 z-50 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
+      <a href="#accueil" class="flex items-center gap-3">
+        <svg viewBox="0 0 48 48" class="h-11 w-11">
+          <circle cx="24" cy="24" r="23" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.5"/>
+          <path d="M24 9C24 9 14 22 14 28a10 10 0 0020 0C34 22 24 9 24 9Z" fill="#0ea5e9"/>
+          <path d="M18 27a6 6 0 006 6" stroke="#ffffff" stroke-width="1.6" fill="none" stroke-linecap="round"/>
         </svg>
         <div class="leading-tight">
-          <div class="font-black text-navy-900 text-lg tracking-tight">CRÉA-BAINS</div>
-          <div class="text-[10px] text-gray-500 uppercase tracking-widest -mt-1">Rénovation &amp; confort de l'habitat</div>
+          <div class="font-black text-navy-900 text-xl tracking-tight">CRÉA-BAINS</div>
+          <div class="text-[9px] text-gray-400 uppercase tracking-[0.15em] -mt-0.5">Rénovation &amp; confort de l'habitat</div>
         </div>
       </a>
-      <nav class="hidden md:flex gap-8 text-sm font-medium text-navy-900">
+      <nav class="hidden lg:flex gap-8 text-xs font-bold tracking-wide text-navy-900 uppercase">
         <a href="#accueil" class="hover:text-sky-500 transition-colors">Accueil</a>
         <a href="#salle-de-bains" class="hover:text-sky-500 transition-colors">Salle de bains</a>
         <a href="#climatisation" class="hover:text-sky-500 transition-colors">Climatisation</a>
+        <a href="#realisations" class="hover:text-sky-500 transition-colors">Avant / Après</a>
         <a href="#about" class="hover:text-sky-500 transition-colors">À propos</a>
         <a href="#contact" class="hover:text-sky-500 transition-colors">Contact</a>
       </nav>
-      <a href="tel:0603969835" class="bg-sky-500 hover:bg-sky-600 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors flex items-center gap-2">
+      <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white text-sm font-bold pl-5 pr-6 py-2.5 rounded-full transition-colors flex items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.45 11.45 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1C10.61 22 2 13.39 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/>
+          <path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/>
         </svg>
-        06 03 96 98 35
+        Nous contacter
       </a>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
-  <section id="accueil" class="min-h-screen flex items-center bg-gradient-to-br from-navy-900 to-navy-800 pt-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <span class="inline-block bg-sky-500/20 text-sky-400 text-sm font-semibold px-3 py-1 rounded-full mb-4 border border-sky-500/30">
-          Créa-Bains
-        </span>
-        <h1 class="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-          Votre salle de bains.<br/>
-          Votre confort.<br/>
-          <span class="text-sky-400">Votre intérieur.</span>
+  <section id="accueil" class="pt-20 bg-navy-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-center min-h-[calc(100vh-5rem)]">
+      <div class="py-16 lg:py-0">
+        <div class="text-sky-400 font-bold text-sm tracking-[0.2em] uppercase mb-4">Créa-Bains</div>
+        <h1 class="text-4xl sm:text-5xl font-black text-white leading-[1.1] mb-6">
+          RÉNOVATION<br/>
+          DE SALLE DE BAINS<br/>
+          &amp; <span class="text-sky-400">CLIMATISATION</span>
         </h1>
-        <p class="text-lg text-gray-300 mb-8">
-          Depuis 2019, Créa-Bains vous accompagne dans la création et la rénovation
-          de salles de bains pensées pour être belles, fonctionnelles et adaptées à votre quotidien.
-        </p>
+        <p class="text-xl text-gray-200 font-semibold mb-2">Votre confort chez vous,</p>
+        <p class="text-xl text-gray-200 font-semibold mb-6">toute l'année.</p>
+        <p class="font-hand text-sky-300 text-3xl mb-8 -rotate-2 inline-block">Créateur de confort</p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-black text-lg px-8 py-4 rounded-xl text-center transition-colors shadow-lg">
+          <a href="#realisations" class="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-3.5 rounded-full transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
+            Découvrir nos réalisations
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-navy-900 font-bold px-6 py-3.5 rounded-full transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
             Demander un devis
           </a>
-          <a href="#salle-de-bains" class="border-2 border-sky-500 text-sky-400 hover:bg-sky-500/10 font-bold text-lg px-8 py-4 rounded-xl text-center transition-colors">
-            Découvrir nos services
-          </a>
-        </div>
-        <div class="mt-8 flex flex-wrap gap-4 text-sm text-gray-400">
-          <span class="flex items-center gap-1">✅ Depuis 2019</span>
-          <span class="flex items-center gap-1">✅ Devis gratuit</span>
-          <span class="flex items-center gap-1">✅ Un seul interlocuteur</span>
         </div>
       </div>
-      <div class="hidden md:flex flex-col items-center gap-6">
-        <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 flex items-center gap-4 w-full">
-          <div class="bg-sky-500 rounded-xl p-3 text-2xl shrink-0">🛁</div>
-          <div>
-            <div class="text-white font-bold text-lg">Salle de bains</div>
-            <div class="text-gray-400 text-sm">Création &amp; rénovation sur mesure</div>
-          </div>
-        </div>
-        <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 flex items-center gap-4 w-full">
-          <div class="bg-sky-500 rounded-xl p-3 text-2xl shrink-0">❄️</div>
-          <div>
-            <div class="text-white font-bold text-lg">Climatisation réversible</div>
-            <div class="text-gray-400 text-sm">Mono-split &amp; multi-split</div>
-          </div>
-        </div>
-        <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 flex items-center gap-4 w-full">
-          <div class="bg-sky-500 rounded-xl p-3 text-2xl shrink-0">📋</div>
-          <div>
-            <div class="text-white font-bold text-lg">Devis <span class="text-sky-400">gratuit</span></div>
-            <div class="text-gray-400 text-sm">Étude personnalisée de votre projet</div>
-          </div>
-        </div>
+      <div class="relative h-72 sm:h-96 lg:h-[calc(100vh-5rem)]">
+        <img src="images/bathroom-shower-black.jpg" alt="Rénovation de salle de bains moderne Créa-Bains" class="absolute inset-0 w-full h-full object-cover lg:rounded-none rounded-2xl" />
+        <div class="absolute inset-0 bg-gradient-to-l from-transparent to-navy-900/10 hidden lg:block"></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== INTRO TEXTE ===== -->
-  <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-      <p class="text-gray-600 text-lg leading-relaxed">
-        Parce qu'une salle de bains n'est plus simplement une petite pièce fonctionnelle de la maison.
-        C'est un espace dans lequel nous passons du temps chaque jour&nbsp;: le matin pour commencer sa journée,
-        le soir pour la terminer. Elle doit donc être à votre image, aussi agréable à vivre que pratique au quotidien.
-      </p>
-      <p class="text-gray-600 text-lg leading-relaxed mt-6">
-        Notre travail consiste à imaginer chaque espace dans son ensemble, à chercher le meilleur aménagement
-        possible et à associer esthétique, confort et fonctionnalité, même lorsque les contraintes de la pièce
-        semblent importantes.
-      </p>
-    </div>
+  <!-- ===== DEUX BLOCS SERVICES ===== -->
+  <section class="grid md:grid-cols-2">
+    <a href="#salle-de-bains" class="grid grid-cols-2 group">
+      <div class="aspect-square overflow-hidden">
+        <img src="images/bathroom-tub-window.jpg" alt="Rénovation de salle de bains" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      </div>
+      <div class="bg-sky-50 flex flex-col justify-center p-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-500 mb-4" viewBox="0 0 24 24" fill="currentColor"><path d="M7 3a1 1 0 00-1 1v2H4a1 1 0 100 2h1v9a4 4 0 004 4h6a4 4 0 004-4v-9h1a1 1 0 100-2h-2V4a1 1 0 00-1-1H7zm2 3V5h6v1H9zm-2 5h10v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6z"/></svg>
+        <h2 class="text-xl sm:text-2xl font-black text-navy-900 mb-3">RÉNOVATION<br/>DE SALLE DE BAINS</h2>
+        <p class="text-gray-600 text-sm mb-4">
+          Conception, création et rénovation de votre salle de bains. Nous imaginons avec vous un espace
+          qui vous ressemble, alliant esthétisme, confort et fonctionnalité.
+        </p>
+        <span class="text-sky-500 font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">En savoir plus <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+    <a href="#climatisation" class="grid grid-cols-2 group">
+      <div class="aspect-square overflow-hidden order-2 md:order-1">
+        <img src="images/ac-wall-units.jpg" alt="Installation de climatisation réversible" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      </div>
+      <div class="bg-sky-50 flex flex-col justify-center p-8 order-1 md:order-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-500 mb-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 011 1v2.59l1.3-1.3a1 1 0 111.4 1.42L13 7.4v2.2l1.9-1.1a1 1 0 111 1.74L14 11.4l1.9 1.1a1 1 0 11-1 1.74L13 13.1v2.2l2.7 2.7a1 1 0 11-1.4 1.42L13 18.1V21a1 1 0 11-2 0v-2.9l-1.3 1.3a1 1 0 11-1.4-1.42L11 15.3v-2.2l-1.9 1.1a1 1 0 11-1-1.74L10 11.4l-1.9-1.1a1 1 0 111-1.74L11 9.6V7.4L8.3 4.7a1 1 0 111.4-1.42L11 4.6V2a1 1 0 011-1z"/></svg>
+        <h2 class="text-xl sm:text-2xl font-black text-navy-900 mb-3">CLIMATISATION<br/>RÉVERSIBLE</h2>
+        <p class="text-gray-600 text-sm mb-4">
+          Installation et mise en service de climatisation réversible en mono-split ou multi-split. Une
+          solution performante pour un confort idéal été comme hiver.
+        </p>
+        <span class="text-sky-500 font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">En savoir plus <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
   </section>
 
   <!-- ===== BANDEAU CONFIANCE ===== -->
-  <div class="bg-sky-500 py-10">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
-      <div class="flex flex-col items-center">
-        <span class="text-2xl mb-1">🤝</span>
-        <div class="text-white font-bold text-sm">Un seul interlocuteur</div>
-        <div class="text-white/80 text-xs mt-1">pour vos projets</div>
+  <section class="bg-white py-14 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+      <div class="flex flex-col items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-sky-500" viewBox="0 0 24 24" fill="currentColor"><path d="M1 8a2 2 0 012-2h3a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2V8zm7.4-1.1l3.2-1.2a2 2 0 011.9.2l4.8 3.4a1.6 1.6 0 01-1.6 2.8l-3.6-1.6M8.4 15.9l3 .9a3 3 0 001.9-.1l6-2.3a1.5 1.5 0 00-1.1-2.8l-4 1.5"/></svg>
+        <div class="font-bold text-navy-900 text-sm">Un seul interlocuteur</div>
+        <div class="text-gray-500 text-xs">pour vos projets</div>
       </div>
-      <div class="flex flex-col items-center">
-        <span class="text-2xl mb-1">✔️</span>
-        <div class="text-white font-bold text-sm">Travail soigné</div>
-        <div class="text-white/80 text-xs mt-1">et finitions de qualité</div>
+      <div class="flex flex-col items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-sky-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3z"/></svg>
+        <div class="font-bold text-navy-900 text-sm">Travail soigné</div>
+        <div class="text-gray-500 text-xs">et finitions de qualité</div>
       </div>
-      <div class="flex flex-col items-center">
-        <span class="text-2xl mb-1">👥</span>
-        <div class="text-white font-bold text-sm">Conseils personnalisés</div>
-        <div class="text-white/80 text-xs mt-1">et accompagnement</div>
+      <div class="flex flex-col items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-sky-500" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        <div class="font-bold text-navy-900 text-sm">Conseils personnalisés</div>
+        <div class="text-gray-500 text-xs">et accompagnement</div>
       </div>
-      <div class="flex flex-col items-center">
-        <span class="text-2xl mb-1">📍</span>
-        <div class="text-white font-bold text-sm">Saint-Leu-la-Forêt</div>
-        <div class="text-white/80 text-xs mt-1">et alentours (Val d'Oise)</div>
+      <div class="flex flex-col items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-sky-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+        <div class="font-bold text-navy-900 text-sm">Saint-Leu-la-Forêt</div>
+        <div class="text-gray-500 text-xs">et alentours (Val d'Oise)</div>
       </div>
-      <div class="flex flex-col items-center col-span-2 md:col-span-1">
-        <span class="text-2xl mb-1">👍</span>
-        <div class="text-white font-bold text-sm">Devis gratuit</div>
-        <div class="text-white/80 text-xs mt-1">et sans engagement</div>
+      <div class="flex flex-col items-center gap-2 col-span-2 md:col-span-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-sky-500" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h2a1 1 0 001-1v-8a1 1 0 00-1-1H2v10zm19.3-9.3a2 2 0 00-1.7-.7h-5.1l.6-2.8V7a1.5 1.5 0 00-1.5-1.5c-.4 0-.8.2-1 .5L9 11v9h9.5a2 2 0 001.9-1.4l1.6-5.5c.2-.7 0-1.5-.7-2.4z"/></svg>
+        <div class="font-bold text-navy-900 text-sm">Devis gratuit</div>
+        <div class="text-gray-500 text-xs">et sans engagement</div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ===== SALLE DE BAINS ===== -->
-  <section id="salle-de-bains" class="py-24 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-16 items-center">
+  <!-- ===== SALLE DE BAINS DETAIL ===== -->
+  <section id="salle-de-bains" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-14 items-center">
+      <div class="rounded-2xl overflow-hidden">
+        <img src="images/bathroom-tub-minimal.jpg" alt="Création de salle de bains sur mesure" class="w-full h-full object-cover" />
+      </div>
       <div>
-        <span class="text-sky-500 font-semibold text-sm uppercase tracking-widest">Notre métier</span>
+        <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Notre métier</span>
         <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-2 mb-6">
-          Création &amp; rénovation<br/>de <span class="text-sky-500">salles de bains</span>
+          Création &amp; rénovation<br/>de salles de bains
         </h2>
         <p class="text-gray-600 mb-4">
           Chaque salle de bains est différente. Sa configuration, ses volumes, les contraintes techniques
@@ -237,56 +233,20 @@
           imaginer différentes possibilités et trouver l'aménagement qui sera à la fois le plus esthétique
           et le plus pratique pour vous.
         </p>
-        <p class="text-navy-900 font-semibold italic">
+        <p class="text-navy-900 font-bold border-l-4 border-sky-500 pl-4 italic">
           Une salle de bains bien pensée, c'est une pièce que l'on aime retrouver chaque jour.
         </p>
-      </div>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="bg-navy-900 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">🚿</span>
-          <span class="text-white font-bold text-sm">Douche &amp; baignoire</span>
-        </div>
-        <div class="bg-sky-500 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">💡</span>
-          <span class="text-white font-bold text-sm">Éclairage &amp; ambiance</span>
-        </div>
-        <div class="bg-sky-500 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">🪞</span>
-          <span class="text-white font-bold text-sm">Meuble vasque &amp; rangements</span>
-        </div>
-        <div class="bg-navy-900 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">🧱</span>
-          <span class="text-white font-bold text-sm">Carrelage &amp; robinetterie</span>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CLIMATISATION ===== -->
+  <!-- ===== CLIMATISATION DETAIL ===== -->
   <section id="climatisation" class="py-24 bg-navy-900">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-16 items-center">
-      <div class="order-2 md:order-1 grid grid-cols-2 gap-4">
-        <div class="bg-white/10 border border-white/20 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">☀️</span>
-          <span class="text-white font-bold text-sm">Confort en été</span>
-        </div>
-        <div class="bg-sky-500 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">🔥</span>
-          <span class="text-white font-bold text-sm">Chauffage d'appoint</span>
-        </div>
-        <div class="bg-sky-500 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">🔧</span>
-          <span class="text-white font-bold text-sm">Mono-split</span>
-        </div>
-        <div class="bg-white/10 border border-white/20 rounded-2xl p-6 flex flex-col items-center text-center gap-2 aspect-square justify-center">
-          <span class="text-3xl">🏠</span>
-          <span class="text-white font-bold text-sm">Multi-split</span>
-        </div>
-      </div>
-      <div class="order-1 md:order-2">
-        <span class="text-sky-400 font-semibold text-sm uppercase tracking-widest">Confort toute l'année</span>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-14 items-center">
+      <div class="order-2 md:order-1">
+        <span class="text-sky-400 font-bold text-sm uppercase tracking-widest">Confort toute l'année</span>
         <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 mb-6">
-          Climatisation <span class="text-sky-400">réversible</span>
+          Climatisation réversible
         </h2>
         <p class="text-gray-300 mb-4">
           Les étés que nous connaissons aujourd'hui nous le rappellent&nbsp;: la chaleur devient une véritable
@@ -304,71 +264,112 @@
           Nous vous accompagnons dans votre projet, de l'étude de vos besoins jusqu'à l'installation
           et la mise en service de votre système, en mono-split ou multi-split.
         </p>
-        <p class="text-sky-400 font-semibold italic">
+        <p class="text-white font-bold border-l-4 border-sky-400 pl-4 italic">
           L'objectif n'est pas simplement d'installer une climatisation&nbsp;: c'est de trouver une solution
           adaptée à votre logement et à votre façon de vivre.
         </p>
       </div>
+      <div class="order-1 md:order-2 rounded-2xl overflow-hidden">
+        <img src="images/ac-wall-units.jpg" alt="Climatisation réversible mono-split multi-split" class="w-full h-full object-cover" />
+      </div>
     </div>
   </section>
 
-  <!-- ===== À PROPOS / HISTOIRE ===== -->
+  <!-- ===== NOTRE HISTOIRE ===== -->
   <section id="about" class="py-24 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="text-center mb-12">
-        <span class="text-sky-500 font-semibold text-sm uppercase tracking-widest">Notre histoire</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-2">
-          Une histoire de famille,<br/>un métier devenu une <span class="text-sky-500">passion</span>
-        </h2>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-14 items-center">
+      <div class="rounded-2xl overflow-hidden">
+        <img src="images/bathroom-tub-window.jpg" alt="Réalisation Créa-Bains" class="w-full h-full object-cover" />
       </div>
-      <div class="bg-gray-50 rounded-2xl p-8 sm:p-10 space-y-4 text-gray-600">
-        <p>Fils de plombier, j'ai naturellement choisi de suivre la voie familiale.</p>
-        <p>
+      <div>
+        <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Notre histoire</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-2 mb-6">
+          Une histoire de famille,<br/>un métier devenu une <span class="text-sky-500">passion.</span>
+        </h2>
+        <p class="text-gray-600 mb-4">Fils de plombier, j'ai naturellement choisi de suivre la voie familiale.</p>
+        <p class="text-gray-600 mb-4">
           Après trois années d'apprentissage, de 2004 à 2007, au sein d'une entreprise spécialisée dans
           la climatisation et la plomberie, j'ai rejoint l'entreprise familiale en 2007.
         </p>
-        <p>
+        <p class="text-gray-600 mb-4">
           C'est au fil des années, et notamment depuis 2011, que je me suis spécialisé dans la création
-          et la rénovation de salles de bains.
+          et la rénovation de salles de bains. Le 4 novembre 2019, j'ai décidé de créer Créa-Bains afin de
+          poursuivre cette aventure avec ma propre vision du métier.
         </p>
-        <p>
-          Le 4 novembre 2019, j'ai décidé de créer Créa-Bains afin de poursuivre cette aventure avec ma
-          propre vision du métier.
+        <p class="text-gray-600 mb-6">
+          Chaque projet est différent. Chaque client a ses habitudes, ses envies et ses contraintes. Ce qui
+          motive avant tout&nbsp;: la satisfaction de mes clients.
         </p>
-        <p>
-          Aujourd'hui, ce que j'apprécie particulièrement, c'est de prendre une pièce, parfois avec de
-          nombreuses contraintes, et de chercher la meilleure solution pour la transformer.
-        </p>
-        <p>Chaque projet est différent. Chaque client a ses habitudes, ses envies et ses contraintes.</p>
-        <p class="text-navy-900 font-bold text-lg pt-2">
-          Et derrière chaque réalisation, il y a surtout une chose qui reste essentielle pour moi&nbsp;:
-          <span class="text-sky-500">la satisfaction du client.</span>
-        </p>
+        <p class="font-hand text-sky-500 text-3xl -rotate-1 inline-block">La confiance de mes clients est ma plus belle réussite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RÉALISATIONS ===== -->
+  <section id="realisations" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Nos réalisations</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-2">Découvrez nos salles de bains</h2>
+          <p class="text-gray-500 mt-2">Des projets uniques, adaptés à vos envies.</p>
+        </div>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-3 rounded-full transition-colors whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 110-8 4 4 0 010 8z"/></svg>
+          Voir toutes nos réalisations
+        </a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
+          <img src="images/bathroom-tub-window.jpg" alt="Réalisation salle de bains 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
+          <img src="images/bathroom-shower-black.jpg" alt="Réalisation salle de bains 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
+          <img src="images/bathroom-tub-minimal.jpg" alt="Réalisation salle de bains 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
+          <img src="images/bathroom-tub-window.jpg" alt="Réalisation salle de bains 4" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== CTA BANDEAU ===== -->
-  <div class="bg-sky-500 py-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="text-3xl font-black text-white mb-2">Un projet de salle de bains ou de climatisation&nbsp;?</h2>
-      <p class="text-white text-lg mb-8">Contactez-moi pour un devis gratuit et sans engagement.</p>
-      <a href="tel:0603969835" class="inline-flex items-center gap-3 bg-navy-900 hover:bg-navy-800 text-white font-black text-lg sm:text-2xl px-8 sm:px-12 py-4 sm:py-5 rounded-2xl transition-colors shadow-xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.45 11.45 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1C10.61 22 2 13.39 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
-        06 03 96 98 35
-      </a>
+  <section class="bg-navy-900">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center">
+      <div class="h-56 md:h-full">
+        <img src="images/ac-wall-units.jpg" alt="Climatisation Créa-Bains" class="w-full h-full object-cover" />
+      </div>
+      <div class="px-6 sm:px-12 py-12 flex flex-col sm:flex-row items-center justify-between gap-8">
+        <div>
+          <p class="text-white font-black text-xl sm:text-2xl leading-snug">Une question ? Un projet ?<br/>Contactez-nous dès maintenant !</p>
+          <p class="text-sky-400 text-sm mt-2">Nous vous répondons rapidement.</p>
+        </div>
+        <div class="flex flex-col items-center gap-3 shrink-0">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-3 rounded-full transition-colors whitespace-nowrap">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
+            Envoyer un message
+          </a>
+          <a href="tel:0603969835" class="text-white font-bold flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.45 11.45 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1C10.61 22 2 13.39 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+            06 03 96 98 35
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- ===== CONTACT ===== -->
-  <section id="contact" class="py-24 bg-gray-50">
+  <section id="contact" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-16 items-start">
       <div>
         <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mb-2">Contactez-<span class="text-sky-500">nous</span></h2>
-        <p class="text-gray-500 mb-8">Pour un devis gratuit, je réponds rapidement.</p>
+        <p class="text-gray-500 mb-8">Pour un devis gratuit, nous répondons rapidement.</p>
 
         <div class="space-y-4">
-          <a href="tel:0603969835" class="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-200 hover:border-sky-400 transition-colors group">
+          <a href="tel:0603969835" class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-sky-300 transition-colors group">
             <span class="bg-navy-900 group-hover:bg-sky-500 p-3 rounded-xl transition-colors flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.45 11.45 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1C10.61 22 2 13.39 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
             </span>
@@ -377,8 +378,10 @@
               <div class="font-bold text-navy-900">06 03 96 98 35</div>
             </div>
           </a>
-          <div class="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-200">
-            <span class="bg-navy-900 p-3 rounded-xl text-2xl">📍</span>
+          <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100">
+            <span class="bg-navy-900 p-3 rounded-xl flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+            </span>
             <div>
               <div class="text-xs text-gray-400 uppercase tracking-wide">Zone</div>
               <div class="font-bold text-navy-900">Saint-Leu-la-Forêt &amp; alentours (Val d'Oise)</div>
@@ -389,7 +392,7 @@
 
       <!-- Formulaire -->
       <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data"
-        class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
+        class="bg-gray-50 rounded-2xl p-8 border border-gray-100"
       >
         <!-- Remplacer par une clé Web3Forms valide pour Créa-Bains : https://web3forms.com -->
         <input type="hidden" name="access_key" value="REMPLACER_PAR_VOTRE_CLE_WEB3FORMS" />
@@ -398,22 +401,22 @@
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Nom</label>
             <input type="text" name="name" required
-              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent" />
+              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent" />
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
             <input type="tel" name="telephone" required
-              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent" />
+              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent" />
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
             <input type="email" name="email"
-              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent" />
+              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent" />
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Type de projet</label>
             <select name="type_projet"
-              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent">
+              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent">
               <option>Rénovation de salle de bains</option>
               <option>Climatisation réversible</option>
               <option>Autre demande</option>
@@ -422,7 +425,7 @@
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
             <textarea name="message" rows="4" required
-              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent"
+              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent"
               placeholder="Décrivez votre projet..."></textarea>
           </div>
           <button type="submit"
@@ -435,20 +438,44 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="bg-navy-900 text-gray-400 py-8">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col items-center sm:flex-row sm:justify-between gap-2 text-sm text-center sm:text-left">
-      <div class="flex items-center gap-2">
-        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
-          <path d="M12 2C12 2 5 11 5 15.5A7 7 0 0019 15.5C19 11 12 2 12 2Z" fill="#0ea5e9"/>
-        </svg>
-        <p class="text-white font-semibold">Créa-Bains — Rénovation &amp; confort de l'habitat</p>
+  <footer class="bg-navy-900 text-gray-400 pt-14 pb-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid sm:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <svg viewBox="0 0 48 48" class="h-9 w-9">
+            <circle cx="24" cy="24" r="23" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.5"/>
+            <path d="M24 9C24 9 14 22 14 28a10 10 0 0020 0C34 22 24 9 24 9Z" fill="#0ea5e9"/>
+          </svg>
+          <div class="leading-tight">
+            <div class="font-black text-white text-lg">CRÉA-BAINS</div>
+            <div class="text-[9px] uppercase tracking-[0.15em] -mt-0.5">Rénovation &amp; confort de l'habitat</div>
+          </div>
+        </div>
       </div>
-      <p class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.45 11.45 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1C10.61 22 2 13.39 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
-        06 03 96 98 35
-      </p>
+      <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm sm:justify-self-center">
+        <a href="#accueil" class="hover:text-sky-400 transition-colors">Accueil</a>
+        <a href="#salle-de-bains" class="hover:text-sky-400 transition-colors">Salle de bains</a>
+        <a href="#climatisation" class="hover:text-sky-400 transition-colors">Climatisation</a>
+        <a href="#realisations" class="hover:text-sky-400 transition-colors">Avant / Après</a>
+        <a href="#about" class="hover:text-sky-400 transition-colors">À propos</a>
+        <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+      </nav>
+      <div class="sm:justify-self-end flex items-start gap-2 text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+        <span>Saint-Leu-la-Forêt &amp; alentours<br/>(partie du Val d'Oise)</span>
+      </div>
     </div>
-    <div class="text-center text-xs text-gray-500 mt-4">© 2025 Créa-Bains. Tous droits réservés.</div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex justify-between items-center text-xs pt-6">
+      <span>© 2025 Créa-Bains. Tous droits réservés.</span>
+      <div class="flex gap-4">
+        <a href="#" aria-label="Facebook" class="hover:text-sky-400 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.4-3H13.5V8.4c0-.9.25-1.5 1.5-1.5H16.5V4.2C16.2 4.15 15.2 4 14 4c-2.4 0-4 1.46-4 4.15V10.5H7.5v3H10V21h3.5z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="hover:text-sky-400 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 2 .25 2.7.53a5.4 5.4 0 011.98 1.29 5.4 5.4 0 011.29 1.98c.28.7.48 1.53.53 2.7.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 2-.53 2.7a5.4 5.4 0 01-1.29 1.98 5.4 5.4 0 01-1.98 1.29c-.7.28-1.53.48-2.7.53-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-2-.25-2.7-.53a5.4 5.4 0 01-1.98-1.29 5.4 5.4 0 01-1.29-1.98c-.28-.7-.48-1.53-.53-2.7C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-2 .53-2.7A5.4 5.4 0 014.09 2.47 5.4 5.4 0 016.07 1.18c.7-.28 1.53-.48 2.7-.53C10.02 0.59 10.4.58 12 .58zm0 3.24a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zm0 10.16a4 4 0 110-8 4 4 0 010 8zm6.4-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+        </a>
+      </div>
+    </div>
   </footer>
 
 </body>
