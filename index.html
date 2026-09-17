@@ -87,11 +87,7 @@
   <header class="fixed top-0 inset-x-0 z-50 bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
       <a href="#accueil" class="flex items-center gap-3">
-        <svg viewBox="0 0 48 48" class="h-11 w-11">
-          <circle cx="24" cy="24" r="23" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.5"/>
-          <path d="M24 9C24 9 14 22 14 28a10 10 0 0020 0C34 22 24 9 24 9Z" fill="#0ea5e9"/>
-          <path d="M18 27a6 6 0 006 6" stroke="#ffffff" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-        </svg>
+        <img src="images/logo.jpeg" alt="Créa-Bains" class="h-14 w-14 rounded-full object-cover" />
         <div class="leading-tight">
           <div class="font-black text-navy-900 text-xl tracking-tight">CRÉA-BAINS</div>
           <div class="text-[9px] text-gray-400 uppercase tracking-[0.15em] -mt-0.5">Rénovation &amp; confort de l'habitat</div>
@@ -116,33 +112,34 @@
 
   <!-- ===== HERO ===== -->
   <section id="accueil" class="pt-20 bg-navy-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-center min-h-[calc(100vh-5rem)]">
-      <div class="py-16 lg:py-0">
-        <div class="text-sky-400 font-bold text-sm tracking-[0.2em] uppercase mb-4">Créa-Bains</div>
-        <h1 class="text-4xl sm:text-5xl font-black text-white leading-[1.1] mb-6">
-          Votre salle de bains.<br/>
-          Votre confort.<br/>
-          <span class="text-sky-400">Votre intérieur.</span>
-        </h1>
-        <p class="text-lg text-gray-300 mb-8 max-w-lg">
-          Depuis 2019, Créa-Bains vous accompagne dans la création et la rénovation de salles de bains
-          pensées pour être belles, fonctionnelles et adaptées à votre quotidien.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#realisations" class="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-3.5 rounded-full transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
-            Découvrir nos réalisations
-            <span aria-hidden="true">→</span>
-          </a>
-          <a href="#contact" class="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-navy-900 font-bold px-6 py-3.5 rounded-full transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
-            Demander un devis
-          </a>
+    <div class="relative min-h-[calc(100vh-5rem)] w-full overflow-hidden">
+      <img src="images/hero.jpeg" alt="Rénovation de salle de bains Créa-Bains" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/80 to-navy-900/10"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-transparent to-transparent"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-24 min-h-[calc(100vh-5rem)] flex items-center">
+        <div class="max-w-xl">
+          <div class="text-sky-400 font-bold text-sm tracking-[0.2em] uppercase mb-4">Créa-Bains</div>
+          <h1 class="text-4xl sm:text-5xl font-black text-white leading-[1.1] mb-6">
+            Votre salle de bains.<br/>
+            Votre confort.<br/>
+            <span class="text-sky-400">Votre intérieur.</span>
+          </h1>
+          <p class="text-lg text-gray-200 mb-8 max-w-lg">
+            Depuis 2019, Créa-Bains vous accompagne dans la création et la rénovation de salles de bains
+            pensées pour être belles, fonctionnelles et adaptées à votre quotidien.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#realisations" class="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-3.5 rounded-full transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
+              Découvrir nos réalisations
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-navy-900 font-bold px-6 py-3.5 rounded-full transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
+              Demander un devis
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="relative h-72 sm:h-96 lg:h-[calc(100vh-5rem)]">
-        <img src="images/bathroom-shower-black.jpg" alt="Rénovation de salle de bains moderne Créa-Bains" class="absolute inset-0 w-full h-full object-cover lg:rounded-none rounded-2xl" />
-        <div class="absolute inset-0 bg-gradient-to-l from-transparent to-navy-900/10 hidden lg:block"></div>
       </div>
     </div>
   </section>
@@ -167,7 +164,7 @@
   <section class="grid md:grid-cols-2">
     <a href="#salle-de-bains" class="grid grid-cols-2 group">
       <div class="aspect-square overflow-hidden">
-        <img src="images/bathroom-tub-window.jpg" alt="Rénovation de salle de bains" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <img src="images/Carrousel/realisation-01.jpeg" alt="Rénovation de salle de bains" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
       </div>
       <div class="bg-sky-50 flex flex-col justify-center p-8">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-500 mb-4" viewBox="0 0 24 24" fill="currentColor"><path d="M7 3a1 1 0 00-1 1v2H4a1 1 0 100 2h1v9a4 4 0 004 4h6a4 4 0 004-4v-9h1a1 1 0 100-2h-2V4a1 1 0 00-1-1H7zm2 3V5h6v1H9zm-2 5h10v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6z"/></svg>
@@ -230,7 +227,7 @@
   <section id="salle-de-bains" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-14 items-center">
       <div class="rounded-2xl overflow-hidden">
-        <img src="images/bathroom-tub-minimal.jpg" alt="Création de salle de bains sur mesure" class="w-full h-full object-cover" />
+        <img src="images/Carrousel/realisation-02.jpeg" alt="Création de salle de bains sur mesure" class="w-full h-full object-cover" />
       </div>
       <div>
         <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Notre métier</span>
@@ -296,7 +293,7 @@
   <section id="about" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-14 items-center">
       <div class="rounded-2xl overflow-hidden">
-        <img src="images/bathroom-tub-window.jpg" alt="Réalisation Créa-Bains" class="w-full h-full object-cover" />
+        <img src="images/Carrousel/realisation-03.jpeg" alt="Réalisation Créa-Bains" class="w-full h-full object-cover" />
       </div>
       <div>
         <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Notre histoire</span>
@@ -345,19 +342,39 @@
           Voir toutes nos réalisations
         </a>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
-          <img src="images/bathroom-tub-window.jpg" alt="Réalisation salle de bains 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+      <div class="relative">
+        <div id="realisations-track" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+          <!-- Carrousel : toutes les photos vivent dans images/Carrousel/ -->
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-01.jpeg" alt="Réalisation Créa-Bains 1" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-02.jpeg" alt="Réalisation Créa-Bains 2" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-03.jpeg" alt="Réalisation Créa-Bains 3" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-04.jpeg" alt="Réalisation Créa-Bains 4" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-05.jpeg" alt="Réalisation Créa-Bains 5" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-06.jpeg" alt="Réalisation Créa-Bains 6" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-07.jpeg" alt="Réalisation Créa-Bains 7" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-08.jpeg" alt="Réalisation Créa-Bains 8" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-09.jpeg" alt="Réalisation Créa-Bains 9" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-10.jpeg" alt="Réalisation Créa-Bains 10" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-11.jpeg" alt="Réalisation Créa-Bains 11" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-12.jpeg" alt="Réalisation Créa-Bains 12" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-13.jpeg" alt="Réalisation Créa-Bains 13" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-14.jpeg" alt="Réalisation Créa-Bains 14" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-15.jpeg" alt="Réalisation Créa-Bains 15" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-16.jpeg" alt="Réalisation Créa-Bains 16" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-17.jpeg" alt="Réalisation Créa-Bains 17" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-18.jpeg" alt="Réalisation Créa-Bains 18" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-19.jpeg" alt="Réalisation Créa-Bains 19" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-20.jpeg" alt="Réalisation Créa-Bains 20" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-21.jpeg" alt="Réalisation Créa-Bains 21" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-22.jpeg" alt="Réalisation Créa-Bains 22" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="snap-start shrink-0 w-[70%] sm:w-[45%] lg:w-[23%] rounded-2xl overflow-hidden aspect-[4/5]"><img src="images/Carrousel/realisation-23.jpeg" alt="Réalisation Créa-Bains 23" class="w-full h-full object-cover" loading="lazy" /></div>
         </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
-          <img src="images/bathroom-shower-black.jpg" alt="Réalisation salle de bains 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
-          <img src="images/bathroom-tub-minimal.jpg" alt="Réalisation salle de bains 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5]">
-          <img src="images/bathroom-tub-window.jpg" alt="Réalisation salle de bains 4" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-        </div>
+        <button type="button" aria-label="Photo précédente" onclick="document.getElementById('realisations-track').scrollBy({left:-320,behavior:'smooth'})" class="hidden sm:flex absolute -left-5 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white shadow-lg items-center justify-center text-navy-900 hover:bg-sky-500 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M15.4 6.6L14 5.2l-7 6.8 7 6.8 1.4-1.4L9.8 12z"/></svg>
+        </button>
+        <button type="button" aria-label="Photo suivante" onclick="document.getElementById('realisations-track').scrollBy({left:320,behavior:'smooth'})" class="hidden sm:flex absolute -right-5 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white shadow-lg items-center justify-center text-navy-900 hover:bg-sky-500 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M8.6 17.4L10 18.8l7-6.8-7-6.8-1.4 1.4 5.6 5.4z"/></svg>
+        </button>
       </div>
     </div>
   </section>
@@ -366,7 +383,7 @@
   <section class="bg-navy-900">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center">
       <div class="h-56 md:h-full">
-        <img src="images/ac-wall-units.jpg" alt="Climatisation Créa-Bains" class="w-full h-full object-cover" />
+        <img src="images/camion.jpeg" alt="Camion Créa-Bains" class="w-full h-full object-cover object-left" />
       </div>
       <div class="px-6 sm:px-12 py-12 flex flex-col sm:flex-row items-center justify-between gap-8">
         <div>
@@ -468,10 +485,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid sm:grid-cols-3 gap-10 pb-10 border-b border-white/10">
       <div>
         <div class="flex items-center gap-2 mb-3">
-          <svg viewBox="0 0 48 48" class="h-9 w-9">
-            <circle cx="24" cy="24" r="23" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.5"/>
-            <path d="M24 9C24 9 14 22 14 28a10 10 0 0020 0C34 22 24 9 24 9Z" fill="#0ea5e9"/>
-          </svg>
+          <img src="images/logo.jpeg" alt="Créa-Bains" class="h-10 w-10 rounded-full object-cover" />
           <div class="leading-tight">
             <div class="font-black text-white text-lg">CRÉA-BAINS</div>
             <div class="text-[9px] uppercase tracking-[0.15em] -mt-0.5">Rénovation &amp; confort de l'habitat</div>
