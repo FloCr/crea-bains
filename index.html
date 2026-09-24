@@ -226,46 +226,6 @@
     </div>
   </section>
 
-  <!-- ===== AVANT / APRÈS ===== -->
-  <section id="avant-apres" class="py-24 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-12">
-      <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Avant / Après</span>
-      <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-2">La transformation en un coup d'œil</h2>
-      <p class="text-gray-500 mt-2">Faites glisser le curseur pour comparer.</p>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden select-none shadow-lg">
-        <img id="ba-after" src="images/Après.png" alt="Salle de bains après rénovation" class="absolute inset-0 w-full h-full object-cover" />
-        <img id="ba-before" src="images/Avant.jpeg" alt="Salle de bains avant rénovation" class="absolute inset-0 w-full h-full object-cover" style="clip-path: inset(0 50% 0 0)" />
-
-        <span class="absolute top-4 left-4 bg-navy-900/70 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full pointer-events-none">Avant</span>
-        <span class="absolute top-4 right-4 bg-sky-500/90 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full pointer-events-none">Après</span>
-
-        <div id="ba-line" class="absolute top-0 bottom-0 w-0.5 bg-white/90 pointer-events-none" style="left:50%"></div>
-        <div id="ba-handle" class="absolute top-1/2 h-10 w-10 -translate-y-1/2 -translate-x-1/2 rounded-full bg-white shadow-lg flex items-center justify-center pointer-events-none" style="left:50%">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-navy-900" viewBox="0 0 24 24" fill="currentColor"><path d="M15.4 6.6L14 5.2l-7 6.8 7 6.8 1.4-1.4L9.8 12z"/><path d="M8.6 17.4L10 18.8l7-6.8-7-6.8-1.4 1.4 5.6 5.4z"/></svg>
-        </div>
-
-        <input type="range" id="ba-range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize m-0" aria-label="Curseur de comparaison avant/après" />
-      </div>
-    </div>
-  </section>
-  <script>
-    (function () {
-      const range = document.getElementById('ba-range');
-      const before = document.getElementById('ba-before');
-      const line = document.getElementById('ba-line');
-      const handle = document.getElementById('ba-handle');
-      if (!range) return;
-      range.addEventListener('input', () => {
-        const v = range.value;
-        before.style.clipPath = `inset(0 ${100 - v}% 0 0)`;
-        line.style.left = v + '%';
-        handle.style.left = v + '%';
-      });
-    })();
-  </script>
-
   <!-- ===== SALLE DE BAINS DETAIL ===== -->
   <section id="salle-de-bains" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-14 items-center">
@@ -370,6 +330,46 @@
       </div>
     </div>
   </section>
+
+  <!-- ===== AVANT / APRÈS ===== -->
+  <section id="avant-apres" class="py-24 bg-sky-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-12">
+      <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Avant / Après</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-2">La transformation en un coup d'œil</h2>
+      <p class="text-gray-500 mt-2">Faites glisser le curseur pour comparer.</p>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden select-none shadow-lg">
+        <img id="ba-after" src="images/Après.png" alt="Salle de bains après rénovation" class="absolute inset-0 w-full h-full object-cover" />
+        <img id="ba-before" src="images/Avant.jpeg" alt="Salle de bains avant rénovation" class="absolute inset-0 w-full h-full object-cover" style="clip-path: inset(0 50% 0 0)" />
+
+        <span class="absolute top-4 left-4 bg-navy-900/70 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full pointer-events-none">Avant</span>
+        <span class="absolute top-4 right-4 bg-sky-500/90 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full pointer-events-none">Après</span>
+
+        <div id="ba-line" class="absolute top-0 bottom-0 w-0.5 bg-white/90 pointer-events-none" style="left:50%"></div>
+        <div id="ba-handle" class="absolute top-1/2 h-10 w-10 -translate-y-1/2 -translate-x-1/2 rounded-full bg-white shadow-lg flex items-center justify-center pointer-events-none" style="left:50%">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-navy-900" viewBox="0 0 24 24" fill="currentColor"><path d="M15.4 6.6L14 5.2l-7 6.8 7 6.8 1.4-1.4L9.8 12z"/><path d="M8.6 17.4L10 18.8l7-6.8-7-6.8-1.4 1.4 5.6 5.4z"/></svg>
+        </div>
+
+        <input type="range" id="ba-range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize m-0" aria-label="Curseur de comparaison avant/après" />
+      </div>
+    </div>
+  </section>
+  <script>
+    (function () {
+      const range = document.getElementById('ba-range');
+      const before = document.getElementById('ba-before');
+      const line = document.getElementById('ba-line');
+      const handle = document.getElementById('ba-handle');
+      if (!range) return;
+      range.addEventListener('input', () => {
+        const v = range.value;
+        before.style.clipPath = `inset(0 ${100 - v}% 0 0)`;
+        line.style.left = v + '%';
+        handle.style.left = v + '%';
+      });
+    })();
+  </script>
 
   <!-- ===== RÉALISATIONS ===== -->
   <section id="realisations" class="py-24 bg-gray-50">
