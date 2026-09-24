@@ -99,7 +99,7 @@
         <a href="#accueil" class="hover:text-sky-500 transition-colors">Accueil</a>
         <a href="#salle-de-bains" class="hover:text-sky-500 transition-colors">Salle de bains</a>
         <a href="#climatisation" class="hover:text-sky-500 transition-colors">Climatisation</a>
-        <a href="#realisations" class="hover:text-sky-500 transition-colors">Avant / Après</a>
+        <a href="#avant-apres" class="hover:text-sky-500 transition-colors">Avant / Après</a>
         <a href="#about" class="hover:text-sky-500 transition-colors">À propos</a>
         <a href="#contact" class="hover:text-sky-500 transition-colors">Contact</a>
       </nav>
@@ -133,7 +133,7 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <a href="#realisations" class="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-3.5 rounded-full transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 014.5 3h15A2.5 2.5 0 0122 5.5v13a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 18.5v-13zm2.2.4l7.3 5.7a1 1 0 001.2 0l7.3-5.7A.5.5 0 0019.5 5h-15a.5.5 0 00-.3.9z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5h3.2l1-1.6c.2-.2.4-.4.7-.4h6.2c.3 0 .5.2.7.4l1 1.6H20a2 2 0 012 2v11a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2zm8 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/></svg>
               Découvrir nos réalisations
               <span aria-hidden="true">→</span>
             </a>
@@ -225,6 +225,46 @@
       </div>
     </div>
   </section>
+
+  <!-- ===== AVANT / APRÈS ===== -->
+  <section id="avant-apres" class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-12">
+      <span class="text-sky-500 font-bold text-sm uppercase tracking-widest">Avant / Après</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-2">La transformation en un coup d'œil</h2>
+      <p class="text-gray-500 mt-2">Faites glisser le curseur pour comparer.</p>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden select-none shadow-lg">
+        <img id="ba-after" src="images/Carrousel/realisation-02.jpeg" alt="Salle de bains après rénovation" class="absolute inset-0 w-full h-full object-cover" />
+        <img id="ba-before" src="images/Carrousel/realisation-01.jpeg" alt="Salle de bains avant rénovation" class="absolute inset-0 w-full h-full object-cover" style="clip-path: inset(0 50% 0 0)" />
+
+        <span class="absolute top-4 left-4 bg-navy-900/70 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full pointer-events-none">Avant</span>
+        <span class="absolute top-4 right-4 bg-sky-500/90 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full pointer-events-none">Après</span>
+
+        <div id="ba-line" class="absolute top-0 bottom-0 w-0.5 bg-white/90 pointer-events-none" style="left:50%"></div>
+        <div id="ba-handle" class="absolute top-1/2 h-10 w-10 -translate-y-1/2 -translate-x-1/2 rounded-full bg-white shadow-lg flex items-center justify-center pointer-events-none" style="left:50%">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-navy-900" viewBox="0 0 24 24" fill="currentColor"><path d="M15.4 6.6L14 5.2l-7 6.8 7 6.8 1.4-1.4L9.8 12z"/><path d="M8.6 17.4L10 18.8l7-6.8-7-6.8-1.4 1.4 5.6 5.4z"/></svg>
+        </div>
+
+        <input type="range" id="ba-range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize m-0" aria-label="Curseur de comparaison avant/après" />
+      </div>
+    </div>
+  </section>
+  <script>
+    (function () {
+      const range = document.getElementById('ba-range');
+      const before = document.getElementById('ba-before');
+      const line = document.getElementById('ba-line');
+      const handle = document.getElementById('ba-handle');
+      if (!range) return;
+      range.addEventListener('input', () => {
+        const v = range.value;
+        before.style.clipPath = `inset(0 ${100 - v}% 0 0)`;
+        line.style.left = v + '%';
+        handle.style.left = v + '%';
+      });
+    })();
+  </script>
 
   <!-- ===== SALLE DE BAINS DETAIL ===== -->
   <section id="salle-de-bains" class="py-24 bg-white">
@@ -341,7 +381,6 @@
           <p class="text-gray-500 mt-2">Des projets uniques, adaptés à vos envies.</p>
         </div>
         <a href="https://www.facebook.com/people/Crea-Bains/100057368293207/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#145dc4] text-white font-bold px-6 py-3 rounded-full transition-colors whitespace-nowrap">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
           Voir toutes nos réalisations Avant / Après
         </a>
       </div>
@@ -549,7 +588,7 @@
         <a href="#accueil" class="hover:text-sky-400 transition-colors">Accueil</a>
         <a href="#salle-de-bains" class="hover:text-sky-400 transition-colors">Salle de bains</a>
         <a href="#climatisation" class="hover:text-sky-400 transition-colors">Climatisation</a>
-        <a href="#realisations" class="hover:text-sky-400 transition-colors">Avant / Après</a>
+        <a href="#avant-apres" class="hover:text-sky-400 transition-colors">Avant / Après</a>
         <a href="#about" class="hover:text-sky-400 transition-colors">À propos</a>
         <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
       </nav>
