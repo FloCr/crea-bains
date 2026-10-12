@@ -19,17 +19,19 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@id": "https://crea-bains.fr/#business",
     "@type": "HomeAndConstructionBusiness",
     "name": "Créa-Bains",
     "description": "Installation de climatisation réversible et rénovation de salles de bains à Sannois et dans le Val d'Oise.",
-    "url": "https://crea-bains.fr/climatisation-sannois.html",
+    "url": "https://crea-bains.fr/",
     "logo": "https://crea-bains.fr/images/logo.jpeg",
     "image": "https://crea-bains.fr/images/logo.jpeg",
     "telephone": "+33603969835",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Sannois",
-      "postalCode": "95110",
+      "addressLocality": "Saint-Leu-la-Forêt",
+      "addressRegion": "Val d'Oise",
+      "postalCode": "95320",
       "addressCountry": "FR"
     },
     "areaServed": [
@@ -40,7 +42,8 @@
       { "@type": "City", "name": "Montlignon" },
       { "@type": "City", "name": "Beauchamp" },
       { "@type": "City", "name": "Le Plessis-Bouchard" },
-      { "@type": "City", "name": "Ermont" }
+      { "@type": "City", "name": "Ermont" },
+      { "@type": "AdministrativeArea", "name": "Val d'Oise" }
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -81,7 +84,7 @@
   <!-- NAVBAR -->
   <header class="fixed top-0 inset-x-0 z-50 bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
-      <a href="index.html" class="flex items-center gap-3">
+      <a href="/" class="flex items-center gap-3">
         <img src="images/logo.jpeg" alt="Créa-Bains" class="h-14 w-14 rounded-full object-cover" />
         <div class="leading-tight">
           <div class="font-black text-navy-900 text-xl tracking-tight">CRÉA-BAINS</div>
@@ -89,11 +92,11 @@
         </div>
       </a>
       <nav class="hidden lg:flex gap-8 text-xs font-bold tracking-wide text-navy-900 uppercase">
-        <a href="index.html#salle-de-bains" class="hover:text-sky-500 transition-colors">Salle de bains</a>
-        <a href="index.html#climatisation" class="hover:text-sky-500 transition-colors">Climatisation</a>
-        <a href="index.html#realisations" class="hover:text-sky-500 transition-colors">Avant / Après</a>
-        <a href="index.html#about" class="hover:text-sky-500 transition-colors">À propos</a>
-        <a href="index.html#contact" class="hover:text-sky-500 transition-colors">Contact</a>
+        <a href="/#salle-de-bains" class="hover:text-sky-500 transition-colors">Salle de bains</a>
+        <a href="/#climatisation" class="hover:text-sky-500 transition-colors">Climatisation</a>
+        <a href="/#realisations" class="hover:text-sky-500 transition-colors">Avant / Après</a>
+        <a href="/#about" class="hover:text-sky-500 transition-colors">À propos</a>
+        <a href="/#contact" class="hover:text-sky-500 transition-colors">Contact</a>
       </nav>
       <a href="tel:0603969835" class="bg-sky-500 hover:bg-sky-600 text-white text-sm font-bold pl-5 pr-6 py-2.5 rounded-full transition-colors flex items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.45 11.45 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1C10.61 22 2 13.39 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
@@ -119,7 +122,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.45 11.45 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1C10.61 22 2 13.39 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
           06 03 96 98 35
         </a>
-        <a href="index.html#contact" class="border-2 border-sky-400 text-sky-400 hover:bg-sky-500/10 font-bold text-lg px-8 py-4 rounded-full text-center transition-colors">
+        <a href="/#contact" class="border-2 border-sky-400 text-sky-400 hover:bg-sky-500/10 font-bold text-lg px-8 py-4 rounded-full text-center transition-colors">
           Demander un devis gratuit
         </a>
       </div>
@@ -198,7 +201,7 @@
         <a href="climatisation-beauchamp.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Beauchamp (95250)</a>
         <a href="climatisation-le-plessis-bouchard.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Le Plessis-Bouchard (95130)</a>
         <a href="climatisation-ermont.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">📍 Ermont (95120)</a>
-        <a href="index.html" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">🏠 Toutes nos zones d'intervention</a>
+        <a href="/" class="bg-white border border-gray-200 hover:border-sky-400 hover:bg-sky-50 text-navy-900 font-semibold px-4 py-2 rounded-full transition-all text-sm">🏠 Toutes nos zones d'intervention</a>
       </div>
     </div>
   </section>
